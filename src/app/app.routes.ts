@@ -1,3 +1,11 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+
+const siteTitle = 'My Site'
+export const routes: Routes = [
+    {
+        path: '',
+        title: siteTitle,
+        loadComponent: () => import('src/app/pages/home'),
+    },
+];

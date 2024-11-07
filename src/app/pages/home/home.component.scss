@@ -1,0 +1,44 @@
+@keyframes fade-away {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+.unecessary-part-of-name {
+    animation: 10s ease-in-out 1s fade-away;
+    animation-fill-mode: forwards;
+}
+.wrapper{
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 3;
+}
+
+// .wave-container {
+//     position: relative;
+//     width: 100%;
+//     overflow: hidden;
+//     line-height: 0;
+//   }
+  
+  .wave-svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  ::ng-deep {
+    .p-avatar {
+        width: 15rem;
+        height: 15rem;
+        font-size: 15rem;
+        .p-avatar-icon {
+            font-size: 15rem;
+        }
+    }
+  }
+  
